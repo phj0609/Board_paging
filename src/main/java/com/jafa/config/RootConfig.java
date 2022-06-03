@@ -24,13 +24,12 @@ public class RootConfig {
 		config.setPassword("1234");
 		return new HikariDataSource(config);
 	}
-	
+
 	@Bean
 	public SqlSessionFactory sqlSessionFactory() throws Exception {
 		SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
 		sqlSessionFactoryBean.setDataSource(dataSource());
 		return sqlSessionFactoryBean.getObject();
 	}
-	
-	
+
 }

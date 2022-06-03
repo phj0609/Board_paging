@@ -14,7 +14,7 @@ public class BoardMapperTest extends AppTest{
 	
 	@Test
 	public void getListTest() {
-		System.out.println(mapper.getList());
+//		System.out.println(mapper.getList());
 	}
 
 }
